@@ -22,8 +22,12 @@ class MainActivity : ComponentActivity() {
                 Surface(color = MaterialTheme.colors.background) {
                     val navController = rememberNavController()
                     NavHost(navController = navController, startDestination = "videos") {
-                        composable("videos") { VideosScreen( navController ) }
-                        composable("videos/{videoId}") { backStackEntry ->  VideoScreen(backStackEntry.arguments?.getString("videoId")!!)  }
+                        composable("videos") { VideosScreen(navController) }
+                        composable("videos/{videoId}") { backStackEntry ->
+                            VideoScreen(
+                                backStackEntry.arguments?.getString("videoId")!!
+                            )
+                        }
                     }
                 }
             }
