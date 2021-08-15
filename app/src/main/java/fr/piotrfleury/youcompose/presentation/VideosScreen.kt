@@ -24,7 +24,7 @@ import fr.piotrfleury.youcompose.data.models.Thumbnail
 import fr.piotrfleury.youcompose.data.models.Thumbnails
 import fr.piotrfleury.youcompose.data.models.Video
 import fr.piotrfleury.youcompose.repositories.VideosRepository
-import fr.piotrfleury.youcompose.theme.YouComposeTheme
+import fr.piotrfleury.youcompose.ui.theme.YouComposeTheme
 import java.util.*
 
 
